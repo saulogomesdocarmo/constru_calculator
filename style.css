@@ -7,7 +7,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
-    color: #333;
+    color: #000000;
     text-align: center;
     padding: 20px;
     line-height: 1.6;
@@ -15,7 +15,7 @@ body {
 
 h1 {
     font-size: 2.8em;
-    color: #34495e;
+    color: #243241;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -24,7 +24,7 @@ h1 {
 p {
     font-size: 1.2em;
     margin-bottom: 25px;
-    color: #7f8c8d;
+    color: #000000;
 }
 
 form {
@@ -70,7 +70,7 @@ input[type="reset"] {
 
 input[type="button"]:hover,
 input[type="reset"]:hover {
-    background-color: #2980b9;
+    background-color: #52b929;
 }
 
 .medida-terreno, .tijolo {
@@ -79,7 +79,7 @@ input[type="reset"]:hover {
     margin-top: 25px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
     width: 90%;
     max-width: 500px;
     margin-left: auto;
@@ -95,7 +95,7 @@ input[type="reset"]:hover {
 
 #area, #qtd_tijolos8, #qtd_tijolos6, #qtd_tijolos9 {
     margin: 10px 0;
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: #2c3e50;
 }
 
