@@ -31,4 +31,7 @@ function calcular() {
 
 function limpar(){
     document.getElementById("area").innerHTML = "Area do terreno"
+    document.getElementById("qtd_tijolos8").innerHTML = "Tijolos de 8 furos"
+    document.getElementById("qtd_tijolos6").innerHTML = "Tijolos de 6 furos"
+    document.getElementById("qtd_tijolos9").innerHTML = "Tijolos de 9 furos"
 }
