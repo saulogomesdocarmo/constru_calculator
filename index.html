@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculadora de Tijolos Baiano</h1>
+    <p>Descubra a quantidade necessária de blocos para construir sua casa</p>
+    <form name="formHome">
+        <p><input type="number" name="numlargura" placeholder="Largura do terreno" required> Largura m²</p>
+        <p><input type="number" name="numcumprimento" placeholder="Cumprimento do terreno" required> Cumprimento m²</p>
+
+        <input type="button" value="calcular" onclick="calcular()">
+        <input type="reset" value="limpar" onclick="limpar()">
+
+    </form>
+
+    <div class="medida-terreno">
+        <h2 id="medida">Medida do Terreno:</h2>
+        <h3 id="area">Area do terreno</h3>
+    </div>
+
+    <div class="tijolo">
+        <h2 id="tijolos">Quantidade de Tijolos</h2>
+        <p id="qtd_tijolos8">Tijolos de 8 furos</p>
+        <p id="qtd_tijolos6">Tijolos de 6 furos</p>
+        <p id="qtd_tijolos9">Tijolos de 8 furos</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
