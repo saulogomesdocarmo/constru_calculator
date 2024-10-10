@@ -18,19 +18,19 @@ function calcular() {
 
     // Calculo tijolos 8 furos
     tijolo8 = area * 28
-    document.getElementById("qtd_tijolos8").innerHTML = `${tijolo8.toFixed(2)} tijolos de 8 furos.`
+    document.getElementById("qtd_tijolos8").innerHTML = `${tijolo8} tijolos de 8 furos.`
 
     // Calculo tijolos 6 furos
     tijolo6 = area * 40
-    document.getElementById("qtd_tijolos6").innerHTML = `${tijolo6.toFixed(2)} tijolos de 6 furos.`
+    document.getElementById("qtd_tijolos6").innerHTML = `${tijolo6} tijolos de 6 furos.`
 
     // Calculo tijolos 9 furos
     tijolo9 = area * 30
-    document.getElementById("qtd_tijolos9").innerHTML = `${tijolo9.toFixed(2)} tijolos de 9 furos.`
+    document.getElementById("qtd_tijolos9").innerHTML = `${tijolo9} tijolos de 9 furos.`
 
     // Calculo dos tijolos maciços
     tijolomacico = area * 80
-    document.getElementById("qtd_macico").innerHTML = `${tijolomacico.toFixed(2)} tijolos maciços`
+    document.getElementById("qtd_macico").innerHTML = `${tijolomacico} tijolos maciços`
 }
 
 function limpar() {
