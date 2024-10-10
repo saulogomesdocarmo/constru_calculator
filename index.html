@@ -12,10 +12,9 @@
 
 <body>
     <h1>Calculadora de Tijolos Baiano</h1>
-    <p>Descubra a quantidade necessária de tijolos baianos para a sua construação, apartir da area do terreno</p>
     <form name="formHome">
-        <p><input type="number" name="numlargura" placeholder="Largura do terreno" required> Largura m²</p>
-        <p><input type="number" name="numcumprimento" placeholder="Cumprimento do terreno" required> Cumprimento m²</p>
+        <p><input type="number" name="numlargura" placeholder="Largura do terreno" required>Largura mt</p>
+        <p><input type="number" name="numcumprimento" placeholder="Cumprimento do terreno" required>Altura mt</p>
 
         <input type="button" value="calcular" onclick="calcular()">
         <input type="reset" value="limpar" onclick="limpar()">
@@ -23,8 +22,8 @@
     </form>
 
     <div class="medida-terreno">
-        <h2 id="medida">Medida do Terreno:</h2>
-        <h3 id="area">Área total do terreno em m²</h3>
+        <h2 id="medida">Tamanho da parede:</h2>
+        <h3 id="area">Tamanho da parede</h3>
     </div>
 
     <div class="tijolo">
