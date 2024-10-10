@@ -1,6 +1,6 @@
 {
     "name": "Construc_Calc",
-    "start_url":"/",
+    "start_url":"/constru_calculator",
     "display": "standalone",
     "orientation": "portrait",
     "icons":[

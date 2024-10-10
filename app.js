@@ -5,7 +5,7 @@
  */
 
 // variaveis
-let largura, cumprimento, area, tijolo8, tijolo6, tijolo9
+let largura, cumprimento, area, tijolo8, tijolo6, tijolo9, tijolomacico
 
 function calcular() {
     // captura de informações
@@ -27,11 +27,16 @@ function calcular() {
     // Calculo tijolos 9 furos
     tijolo9 = area * 30
     document.getElementById("qtd_tijolos9").innerHTML = `${tijolo9.toFixed(2)} tijolos de 9 furos.`
+
+    // Calculo dos tijolos maciços
+    tijolomacico = area * 80
+    document.getElementById("qtd_macico").innerHTML = `${tijolomacico.toFixed(2)} tijolos maciços`
 }
 
-function limpar(){
+function limpar() {
     document.getElementById("area").innerHTML = "Area do terreno"
     document.getElementById("qtd_tijolos8").innerHTML = "Tijolos de 8 furos"
     document.getElementById("qtd_tijolos6").innerHTML = "Tijolos de 6 furos"
     document.getElementById("qtd_tijolos9").innerHTML = "Tijolos de 9 furos"
+    document.getElementById("qtd_macico").innerHTML = "Tijolos Maciços"
 }
