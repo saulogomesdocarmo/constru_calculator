@@ -5,7 +5,7 @@
  */
 
 // variaveis
-let largura, cumprimento, area, tijolo8, tijolo6, tijolo9, tijolomacico
+let largura, cumprimento, tamanho, tijolo8, tijolo6, tijolo9, tijolinho
 
 function calcular() {
     // captura de informações
@@ -13,30 +13,43 @@ function calcular() {
     cumprimento = formHome.numcumprimento.value
 
     // calculo para descobrir a area do terreno:
-    area = cumprimento * largura
-    document.getElementById("area").innerHTML = `${area} m²`
+    tamanho = cumprimento * largura
+    document.getElementById("area-parede").innerHTML = `${tamanho} m²`
 
-    // Calculo tijolos 8 furos
-    tijolo8 = area * 28
-    document.getElementById("qtd_tijolos8").innerHTML = `${tijolo8} tijolos de 8 furos.`
+    // Lógica para calcular a quantidade de tijolos, apartir da escolha da quantidade de furos no bloco
+    if (document.getElementById('6furos').checked === true) {
+        tijolo6 = tamanho * 40
+        document.getElementById('total').innerHTML = `${tijolo6} tijlos de 6 furos`
 
-    // Calculo tijolos 6 furos
-    tijolo6 = area * 40
-    document.getElementById("qtd_tijolos6").innerHTML = `${tijolo6} tijolos de 6 furos.`
+    } else if (document.getElementById('8furos').checked === true) {
+        tijolo8 = tamanho * 28
+        document.getElementById('total').innerHTML = `${tijolo8} tijolos de 8 furos`
 
-    // Calculo tijolos 9 furos
-    tijolo9 = area * 30
-    document.getElementById("qtd_tijolos9").innerHTML = `${tijolo9} tijolos de 9 furos.`
+    } else if (document.getElementById('9furos').checked === true) {
+        tijolo9 = tamanho * 30
+        document.getElementById('total').innerHTML = `${tijolo9} tijolos de 9 furos`
 
-    // Calculo dos tijolos maciços
-    tijolomacico = area * 80
-    document.getElementById("qtd_macico").innerHTML = `${tijolomacico} tijolos maciços`
+    } else if (document.getElementById('tijolinhos').checked === true) {
+        tijolinho = tamanho * 80
+        document.getElementById('total').innerHTML = `${tijolinho} tijolinhos`
+    } else {
+        // Lógica para obrigatoriedade do preenchimento
+        if (document.getElementById('6furos').checked === false || document.getElementById('8furos').checked === false) {
+            document.getElementById('area-parede').innerHTML = `É necessário um tipo de tijolo`
+            document.getElementById('total').innerHTML = `Escolha um tipo de tijolo`
+
+        } else if (document.getElementById('9furos').checked === false || document.getElementById('tijolinhos').checked === false) {
+            document.getElementById('area-parede').innerHTML = `É necessário um tipo de tijolo`
+            document.getElementById('total').innerHTML = `Escolha um tipo de tijolo`
+        } else {
+
+        }
+    }
+
 }
 
 function limpar() {
-    document.getElementById("area").innerHTML = "Tamanho da parede"
-    document.getElementById("qtd_tijolos8").innerHTML = "Tijolos de 8 furos"
-    document.getElementById("qtd_tijolos6").innerHTML = "Tijolos de 6 furos"
-    document.getElementById("qtd_tijolos9").innerHTML = "Tijolos de 9 furos"
-    document.getElementById("qtd_macico").innerHTML = "Tijolos Maciços"
+    document.getElementById("area-parede").innerHTML = "Resultado"
+    document.getElementById("total").innerHTML = "Resultado"
+
 }
