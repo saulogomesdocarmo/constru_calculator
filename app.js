@@ -5,16 +5,18 @@
  */
 
 // variaveis
-let largura, cumprimento, tamanho, tijolo8, tijolo6, tijolo9, tijolinho
+let largura, cumprimento, tamanho, tijolo8, tijolo6, tijolo9, tijolinho, comodo, qtd_paredes
 
 function calcular() {
     // captura de informações
     largura = formHome.numlargura.value
     cumprimento = formHome.numcumprimento.value
+    qtd_paredes = formHome.qtdParedes.value
 
-    // calculo para descobrir a area do terreno:
+    // calculo para descobrir o tamanho do comodo:
     tamanho = cumprimento * largura
-    document.getElementById("area-parede").innerHTML = `${tamanho} m`
+    comodo = tamanho * qtd_paredes
+    document.getElementById("area-comodo").innerHTML = `${comodo} m`
 
     // Lógica para calcular a quantidade de tijolos, apartir da escolha da quantidade de furos no bloco
     if (document.getElementById('6furos').checked === true) {
@@ -35,11 +37,11 @@ function calcular() {
     } else {
         // Lógica para obrigatoriedade do preenchimento
         if (document.getElementById('6furos').checked === false || document.getElementById('8furos').checked === false) {
-            document.getElementById('area-parede').innerHTML = `É necessário um tipo de tijolo`
+            document.getElementById('area-comodo').innerHTML = `É necessário um tipo de tijolo`
             document.getElementById('total').innerHTML = `Escolha um tipo de tijolo`
 
         } else if (document.getElementById('9furos').checked === false || document.getElementById('tijolinhos').checked === false) {
-            document.getElementById('area-parede').innerHTML = `É necessário um tipo de tijolo`
+            document.getElementById('area-comodo').innerHTML = `É necessário um tipo de tijolo`
             document.getElementById('total').innerHTML = `Escolha um tipo de tijolo`
         } else {
 
@@ -49,7 +51,7 @@ function calcular() {
 }
 
 function limpar() {
-    document.getElementById('area-parede').innerHTML = "Resultado"
+    document.getElementById('area-comodo').innerHTML = "Resultado"
     document.getElementById('total').innerHTML = "Resultado"
     document.getElementById('6furos').checked = false
     document.getElementById('8furos').checked = false
