@@ -14,7 +14,7 @@ function calcular() {
 
     // calculo para descobrir a area do terreno:
     tamanho = cumprimento * largura
-    document.getElementById("area-parede").innerHTML = `${tamanho} m²`
+    document.getElementById("area-parede").innerHTML = `${tamanho} m`
 
     // Lógica para calcular a quantidade de tijolos, apartir da escolha da quantidade de furos no bloco
     if (document.getElementById('6furos').checked === true) {
@@ -49,7 +49,11 @@ function calcular() {
 }
 
 function limpar() {
-    document.getElementById("area-parede").innerHTML = "Resultado"
-    document.getElementById("total").innerHTML = "Resultado"
+    document.getElementById('area-parede').innerHTML = "Resultado"
+    document.getElementById('total').innerHTML = "Resultado"
+    document.getElementById('6furos').checked = false
+    document.getElementById('8furos').checked = false
+    document.getElementById('9furos').checked = false
+    document.getElementById('tijolinhos').checked = false
 
 }
