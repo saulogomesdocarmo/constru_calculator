@@ -7,31 +7,49 @@
     <title>Calculator</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="manifest" href="manifest.json">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Calculadora de Tijolos Baiano</h1>
         <form name="formHome">
-            <p><input type="number" name="numlargura" placeholder="Largura da parede" required> Largura mt</p>
-            <p><input type="number" name="numcumprimento" placeholder="Altura da parede" required> Altura mt</p>
+            <p>Digite a largura da parede:</p>
+            <input type="number" name="numlargura" id="largura" placeholder="Largura da parede em metros (mt)" required>
+            <p>Digite a altura da parede:</p>
+            <input type="number" name="numcumprimento" id="altura" placeholder="Altura da parede em metros (mt)"
+                required>
+
             <div class="radio">
-                <input type="radio" name="tijolos" id="6furos"> 6 Furos
-                <input type="radio" name="tijolos" id="8furos"> 8 Furos
-                <input type="radio" name="tijolos" id="9furos"> 9 Furos
-                <input type="radio" name="tijolos" id="tijolinhos"> Tijolinhos
+                <div id="titulo-radio">
+                    <h2>Quantidade de Furos</h2>
+                </div>
+                <div id="input-radio">
+                    <input type="radio" name="tijolos" id="6furos"> 6
+                    <input type="radio" name="tijolos" id="8furos"> 8
+                    <input type="radio" name="tijolos" id="9furos"> 9
+                    <input type="radio" name="tijolos" id="tijolinhos"> Tijolinhos
+                </div>
             </div>
-            <input type="button" value="calcular" onclick="calcular()">
-            <input type="reset" value="limpar" onclick="limpar()">
+
+            <div class="botoes">
+
+                <div class="containerbotao">
+                    <input type="button" value="calcular" id="botaocalcular" onclick="calcular()">
+                    <input type="reset" value="limpar" id="botaolimpar" onclick="limpar()">
+                </div>
+
+            </div>
         </form>
-        <div class="comodo-medida">
-            <h2 id="resultado">Tamanho da Comodo:</h2>
-            <h3 id="area-parede">Resultado</h3>
-        </div>
-        <div class="quantidade">
-            <h2 id="tijolos">Quantidade de Tijolos</h2>
-            <h3 id="total">Resultado</h3>
+        <div id="resultado-final">
+            <div class="comodo-medida">
+                <h2 id="resultado">Tamanho da Comodo : </h2>
+                <h3 id="area-parede">Resultado</h3>
+            </div>
+            <div class="quantidade">
+                <h2 id="tijolos">Quantidade de Tijolos : </h2>
+                <h3 id="total">Resultado</h3>
+            </div>
         </div>
         <script src="app.js"></script>
     </div>

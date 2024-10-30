@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Light.ttf');
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
+}
+
+:root {
+    --botao1: #179ad6;
+    --botao2: #e79120;
+    --branco: #fff;
+    --preto: #000;
+    --font: 'Poppins';
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 1em;
+}
+
+.container {
+    /* Margin auto para alinhar os objetos ao centro e overflow: hidden para tirar a barra de rolagem */
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    /* largura e altura do container */
+    width: 100vw;
+    max-width: 350px;
+    height: 100vh;
+    max-height: 650px;
+    background-color: chocolate;
+}
+
+h1 {
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+form p {
+    font-weight: 400;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#altura,#largura {
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline:none ;
+    color: var(--preto);
+    text-align: center;
+    font-weight: 500;  
+}
+
+.radio h2{
+    font-size: 1em;
+    font-weight: 600;
+    text-align: start;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+#input-radio{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.botoes{
+    margin: 10px 0px;
+    display: flex;
+    background-color: blueviolet;
+    width: 250px;
+
+}
+
+.containerbotao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#botaocalcular,#botaolimpar{
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 3px;
+}
+#resultado-final{
+
+}
+
+#resultado,#tijolos{
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#area-parede,#total{
+    font-size: 1.1em;
+    font-weight: 400;
+}
