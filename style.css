@@ -7,8 +7,11 @@
 }
 
 :root {
-    --botao1: #179ad6;
-    --botao2: #e79120;
+    --azul-escuro: #0c86be;
+    --laranja: #e79120;
+    --laranja-escuro: #ec8601;
+    --cinza-escuro: #cac9c9;
+    --cinza-claro:#f7f7f7;
     --branco: #fff;
     --preto: #000;
     --font: 'Poppins';
@@ -25,19 +28,18 @@
 body {
     font-family: 'Poppins';
     font-size: 1em;
+    background: var(--cinza-claro);
 }
 
 .container {
-    /* Margin auto para alinhar os objetos ao centro e overflow: hidden para tirar a barra de rolagem */
     margin: auto;
     margin-top: 10px;
     overflow: hidden;
-    /* largura e altura do container */
     width: 100vw;
     max-width: 350px;
     height: 100vh;
     max-height: 650px;
-    background-color: chocolate;
+    
 }
 
 h1 {
@@ -45,11 +47,15 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    color: var(--laranja);
+    
 }
 
 form p {
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
     text-align: center;
     margin: 5px 0px;
 }
@@ -59,20 +65,26 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    padding: 10px;
+    background: var(--cinza-escuro);
+    
+
+    
 }
 
 #altura,#largura {
     width: 250px;
     height: 30px;
+    border-radius: 3px;
     border: none;
     outline:none ;
     color: var(--preto);
     text-align: center;
-    font-weight: 500;  
+    font-weight: 600;  
 }
 
 .radio h2{
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 600;
     text-align: start;
     text-transform: uppercase;
@@ -80,31 +92,58 @@ form {
 }
 
 #input-radio{
-    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 1.1em;
 }
 
 .botoes{
-    margin: 10px 0px;
+    margin: 5px 0px;
     display: flex;
-    background-color: blueviolet;
     width: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    
 
 }
 
 .containerbotao{
+    margin: 10px 0px;
+    margin-top: 5px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 110px;
+    
 }
 
 #botaocalcular,#botaolimpar{
-    padding: 5px;
+    padding: 8px 10px;
     font-size: 1em;
     border-radius: 3px;
 }
-#resultado-final{
 
+#botaocalcular{
+    background:var(--laranja);
+    color: var(--branco);
+    font-weight: 600;
+}
+
+#botaolimpar{
+    background:var(--azul-escuro);
+    color: var(--branco);
+    font-weight: 600;
+}
+
+#resultado-final{
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: var(--cinza-escuro);
+    height: 200px;
 }
 
 #resultado,#tijolos{
@@ -114,6 +153,9 @@ form {
 }
 
 #area-parede,#total{
-    font-size: 1.1em;
-    font-weight: 400;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+    
 }
