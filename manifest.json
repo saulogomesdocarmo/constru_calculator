@@ -1,13 +1,74 @@
 {
     "name": "Construc_Calc",
-    "start_url":"/constru_calculator",
+    "start_url": "/constru_calculator",
+    "socpe": "/",
     "display": "standalone",
-    "orientation": "portrait",
-    "icons":[
+    "theme_color": "#c05813",
+    "backgorund_color": "#fff",
+    "description": "Aplicativo para calcular a qunatidade necessária de tijolos para construir uma parede, a partir do modelo do tijolo. ",
+    "dir": "lfr",
+    "lang": "pt-BR",
+    "orientation": "portrait-primary",
+    "icons": [
         {
             "src": "img/icon.png",
             "sizes": "512x512",
             "type": "image/png"
+        },
+        {
+            "src": "./img/iconx48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/iconx72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/iconx96.png",
+            "sizes": "96X96",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/iconx144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/iconx192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/iconx256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/iconx388.png",
+            "sizes": "388x388",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/iconx512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    
+    "screenshots": [
+        {
+            "src": "./img/screenshot1.png",
+            "sizes": "396X667",
+            "type": "image/png",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "./img/screenshot2.png",
+            "sizes": "814X676",
+            "type": "image/png",
+            "form_factor": "wide"
         }
     ]
 }

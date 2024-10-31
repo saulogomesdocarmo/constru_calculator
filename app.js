@@ -1,7 +1,7 @@
 /**
  * APP - Para poder calcular a quantidade de tijolos baianos necessários para construir, apartir da medida
  * @author Saulo Gomes
- * @version 1.0
+ * @version 2.0
  */
 
 // variaveis
