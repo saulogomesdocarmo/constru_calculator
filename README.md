@@ -1,2 +1,2 @@
 # constru_calculator
-Aplicativo para poder dizer o número de tijolos necessários para poder construir algo, a partir do tamanho da área do terreno
+Aplicativo para poder dizer a quantidade necessária de tijolos para construir uma parede, a partir do tamanho do tijolos.
