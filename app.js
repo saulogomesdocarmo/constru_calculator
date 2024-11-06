@@ -4,6 +4,20 @@
  * @version 2.0
  */
 
+// Registro do ServiceWorker >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Verificação - verifcar se o ServiceWorker
+// Iniciar o ServiceWorker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.js')
+        .then(() => {
+            console.log("Service Worker Registrado")
+        })
+}
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// Lógica Principal do Aplicativo
+
 // variaveis
 let largura, cumprimento, tamanho, tijolo8, tijolo6, tijolo9, tijolinho
 

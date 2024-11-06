@@ -1,7 +1,8 @@
 {
     "name": "Construc_Calc",
+    "shor_name": "Constru Calc",
     "start_url": "/constru_calculator",
-    "socpe": "/",
+    "scope": "/",
     "display": "standalone",
     "theme_color": "#c05813",
     "backgorund_color": "#fff",
