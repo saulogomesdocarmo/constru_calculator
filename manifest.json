@@ -1,6 +1,6 @@
 {
     "name": "Construc_Calc",
-    "shor_name": "Constru Calc",
+    "short_name": "Constru Calc",
     "start_url": "/constru_calculator",
     "scope": "/",
     "display": "standalone",

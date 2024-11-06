@@ -7,12 +7,12 @@
 // Registro do ServiceWorker >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Verificação - verifcar se o ServiceWorker
 // Iniciar o ServiceWorker
-if ('serviceWorker' in navigator) {
+if('serviceWorker' in navigator){
     navigator.serviceWorker
-        .register('/sw.js')
-        .then(() => {
-            console.log("Service Worker Registrado")
-        })
+    .register('/sw.js')
+    .then(() =>{
+        console.log("Service Worker registrado")
+    })
 }
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
