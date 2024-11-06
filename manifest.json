@@ -12,11 +12,6 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "img/icon.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        },
-        {
             "src": "./img/iconx48.png",
             "sizes": "48x48",
             "type": "image/png"
