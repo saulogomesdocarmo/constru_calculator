@@ -30,7 +30,7 @@ self.addEventListener('activate', (event) => {
 
 // Escutando requisições e "buscando algo"
 self.addEventListener('fetch', (event) => {
-    console.log("Buscando algo...", event)
+    // console.log("Buscando algo...", event)
     // armazenar em cache (arquivos estáticos pré-carregados) todas as requisições
     event.respondWith(
         caches.match(event.request)
