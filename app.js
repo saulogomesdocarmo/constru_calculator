@@ -9,7 +9,7 @@
 // Iniciar o ServiceWorker
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('/sw.js')
+        .register('/constru_calculator/sw.js')
         .then(() => {
             console.log("Service Worker registrado")
         })
