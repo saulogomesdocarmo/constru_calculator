@@ -7,3 +7,4 @@ APP
 ## Autor 
 Saulo G carmo
 ## APP
+![qrcode](https://github.com/saulogomesdocarmo/constru_calculator/blob/main/img/qrcode.png)
